@@ -26,6 +26,7 @@ public class ScoreCounter: MonoBehaviour
             ScoreNum += 1;
             MyScoreText.text = "  " + ScoreNum;
             MyScoreText2.text = "Points: " + ScoreNum;
+            
         }
     }
 

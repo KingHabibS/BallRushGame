@@ -20,7 +20,7 @@ public class ParticleBurst : MonoBehaviour
 
             once = false;
             Destroy(sr);
-            Invoke(nameof(DestroyObj), dur);
+            Invoke(nameof(DestroyObj), 0.2f);
         }
     }
 
