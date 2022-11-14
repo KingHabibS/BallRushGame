@@ -21,7 +21,7 @@ public class ScoreCounter: MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D Enemy) 
     {
-        if (Enemy.tag == "Enemy")
+        if (Enemy.tag == "Enemy1" || Enemy.tag == "Enemy2")
         {
             ScoreNum += 1;
             MyScoreText.text = "  " + ScoreNum;

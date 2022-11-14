@@ -7,6 +7,12 @@ public class ParticleBurst : MonoBehaviour
     public ParticleSystem collisionParticleSystem;
     public SpriteRenderer sr;
     public bool once = true;
+    
+
+    void Start()
+    {
+        
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +27,7 @@ public class ParticleBurst : MonoBehaviour
             once = false;
             Destroy(sr);
             Invoke(nameof(DestroyObj), 0.2f);
+            
         }
     }
 
