@@ -19,9 +19,9 @@ public class ScoreCounter: MonoBehaviour
         MyScoreText2.text = "Points: " + ScoreNum;
     }
 
-    private void OnTriggerEnter2D(Collider2D Enemy) 
+    private void OnTriggerEnter2D(Collider2D Enemy)
     {
-        if (Enemy.tag == "Enemy1" || Enemy.tag == "Enemy2")
+        if (Enemy.tag == "Enemy1" || Enemy.tag == "Enemy2" || Enemy.tag == "Enemy3" || Enemy.tag == "Enemy4" || Enemy.tag == "Enemy5")
         {
             ScoreNum += 1;
             MyScoreText.text = "  " + ScoreNum;
