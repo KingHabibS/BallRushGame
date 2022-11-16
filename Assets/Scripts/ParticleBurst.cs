@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class ParticleBurst : MonoBehaviour
 {
+    
     public ParticleSystem collisionParticleSystem;
     public SpriteRenderer sr;
     public bool once = true;
-    
+
 
     void Start()
     {
@@ -18,6 +19,7 @@ public class ParticleBurst : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player") && once)
         {
+
             var em = collisionParticleSystem.emission;
             var dur = collisionParticleSystem.duration;
 
